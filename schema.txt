@@ -1,0 +1,712 @@
+<UOM_name>: string .
+<account_name>: string .
+<account_number>: string .
+<address>: uid .
+<address_des>: string @index(term) .
+<address_str>: string .
+<address_type>: int .
+<alt_address>: [uid] .
+<alt_email>: [string] .
+<alt_info>: [uid] .
+<alt_name>: [string] .
+<alt_phone>: [string] .
+<applied_items>: [uid] .
+<applied_value>: int .
+<area>: string .
+<areas>: [uid] @reverse .
+<areas_allowed>: [uid] .
+<auto_apply>: bool .
+<back_margin>: string .
+<back_margin_terms>: string .
+<background_image>: string .
+<bank_branch_name>: string .
+<bank_name>: string .
+<barcode>: string .
+<brand_name>: string @index(exact, fulltext) .
+<brand_shop_id>: string @index(exact) .
+<cart.product>: uid .
+<cart_items>: [uid] .
+<children>: [uid] .
+<client_notes>: string .
+<collection.and_cond>: [uid] .
+<collection.collection_item>: [uid] .
+<collection.neg_prod_cond>: [uid] .
+<collection.or_cond>: [uid] .
+<collection_icon>: string .
+<collection_image>: string .
+<collection_name>: string @index(exact) .
+<collection_type>: int @index(int) .
+<color>: string .
+<color_discount>: string .
+<color_price>: string .
+<color_title>: string .
+<company_name>: string @index(exact) .
+<condition_type>: int .
+<condition_value>: int .
+<config_type>: int .
+<contact_person>: string .
+<content>: string .
+<contract_number>: string .
+<contract_type>: string .
+<cost_price>: float .
+<cost_price_with_vat>: float .
+<cost_price_without_vat>: float .
+<created_address_des>: string .
+<created_address_type>: string .
+<created_at>: int .
+<created_customer_name>: string .
+<created_district>: [uid] .
+<created_phone_number>: string .
+<created_province>: [uid] .
+<customer.favourite_products>: [uid] .
+<customer_name>: string @index(fulltext, term) .
+<customer_uid>: string @index(term) .
+<dateOfBirth>: string .
+<date_delivery_success>: int .
+<date_import>: string .
+<description>: string .
+<description_html>: string .
+<detail.icon>: uid .
+<detail>: uid .
+<details>: [uid] .
+<dgraph.drop.op>: string .
+<dgraph.graphql.schema>: string .
+<dgraph.graphql.xid>: string @index(exact) @upsert .
+<discount>: int .
+<discount_tag>: string .
+<display_bill_name>: string .
+<display_name>: string @index(fulltext, term) .
+<display_name_detail>: string @index(term) .
+<display_order>: int .
+<display_status>: int .
+<district>: uid .
+<email>: string @index(term, trigram) .
+<expiry_date>: int .
+<fptplay_id>: string @index(exact) .
+<free_shipping_tag>: bool .
+<from_date>: int .
+<front_margin>: float .
+<fulltext_search>: string @index(fulltext, trigram) .
+<function_alias>: string .
+<function_name>: string .
+<gender>: int .
+<geo>: string .
+<geo_region>: string .
+<ghn_code>: string .
+<ghn_id>: int .
+<gradient_end>: string .
+<gradient_start>: string .
+<group_customer.customers>: [uid] @reverse .
+<group_customer_name>: string .
+<group_payment_name>: string .
+<had_sent_partner>: bool .
+<had_sent_shipping>: bool .
+<haravan_id>: int .
+<haravan_variant_id>: int .
+<height>: float .
+<hide>: bool .
+<highlight.collections>: [uid] @reverse .
+<highlight.negative_products>: [uid] @reverse .
+<highlight.products>: [uid] @reverse .
+<highlight_name>: string .
+<id>: string @index(exact) .
+<image>: int .
+<image_banner>: string .
+<image_cover>: string .
+<image_highlight>: string .
+<image_promotion>: string .
+<import_status>: string .
+<input_status>: bool .
+<instock>: bool .
+<is_default>: bool .
+<is_default_address>: bool .
+<is_deleted>: bool .
+<is_disabled_cod>: bool .
+<is_disabled_quickpay>: bool .
+<is_internal>: bool .
+<is_laucher_temp>: bool .
+<is_parent>: bool .
+<is_province>: bool .
+<is_temporary>: bool .
+<item_collection>: uid .
+<item_product>: uid .
+<item_type>: string .
+<item_volume>: int .
+<keywords>: string @index(term) .
+<layout.collections>: [uid] .
+<layout.customers>: [uid] @reverse .
+<layout.group_customers>: [uid] @reverse .
+<layout.layout_section>: [uid] .
+<layout.layout_type>: [uid] .
+<layout.target_customer>: uid @reverse .
+<layout_name>: string .
+<layout_type>: int .
+<limit_redeem>: int .
+<list_voucher_code>: string .
+<listed_price_with_vat>: float .
+<listed_price_without_vat>: float .
+<location>: geo .
+<location_support>: bool .
+<long>: float .
+<manufacturer_name>: string @index(exact) .
+<max_applied_value>: int .
+<media_type>: string @index(exact) .
+<name>: string @index(fulltext, term) .
+<name_url>: string @index(fulltext) .
+<notes>: string .
+<operator>: string .
+<order.customer>: uid @reverse .
+<order.partner>: uid .
+<order.product>: uid .
+<order_id>: string @index(fulltext) .
+<order_items>: [uid] @reverse .
+<order_status>: int .
+<original>: string @index(fulltext) .
+<packaging_unit>: string .
+<packaging_unit_quantity>: string .
+<parent>: uid @reverse .
+<parent_sku_id>: string .
+<partner.collection>: [uid] @reverse .
+<partner.pricing>: uid @reverse .
+<partner.warehouse>: [uid] .
+<partner_id>: string @index(fulltext) .
+<partner_name>: string @index(exact) .
+<partner_product_id>: string .
+<partner_sku>: string @index(exact) .
+<password>: password .
+<path>: string .
+<pathErr>: string .
+<pay_gateway>: string .
+<pay_status>: int .
+<payment_code>: string .
+<payment_methods>: [uid] .
+<payment_name>: string .
+<payment_terms>: string .
+<permission>: int .
+<phone_number>: string @index(fulltext, trigram) .
+<previews>: [uid] @reverse .
+<price_with_vat>: float .
+<price_without_vat>: float .
+<pricing.partner>: uid .
+<pricing.product>: uid .
+<product.areas>: [uid] @reverse .
+<product.brand>: uid @reverse .
+<product.collection>: [uid] @reverse .
+<product.group_payment>: uid .
+<product.manufacturer>: uid .
+<product.partner>: uid @reverse .
+<product.pricing>: uid @reverse .
+<product.type>: uid @reverse .
+<product.uom>: uid .
+<product_name>: string @index(term) .
+<product_payment>: [uid] .
+<profile_phone_number>: string @index(fulltext, trigram) .
+<promotion_desc>: string .
+<promotion_detail>: string .
+<province>: uid .
+<quantity>: int .
+<ratio>: string .
+<re_charged>: int .
+<reason>: string .
+<reason_name>: string .
+<reason_value>: string .
+<redeem>: int .
+<reference_type>: int .
+<rejected_items>: [uid] .
+<request_delivery_time>: string .
+<required_order_value>: int .
+<return_terms>: string .
+<ribbon>: string .
+<role.role_function>: [uid] .
+<role>: uid .
+<role_name>: string .
+<section_limit>: int .
+<section_name>: string .
+<section_ref>: string .
+<section_ref_value>: string .
+<section_type>: string .
+<section_value>: string .
+<sell_price>: float .
+<shelf_life>: string .
+<shipping_address>: [uid] .
+<shipping_code>: string .
+<shipping_fee>: int .
+<shipping_method>: int .
+<shipping_time>: int .
+<short_des>: string .
+<short_des_1>: string .
+<short_des_1_color>: string .
+<short_des_1_show>: bool .
+<short_des_2>: string .
+<short_des_2_color>: string .
+<short_des_2_show>: bool .
+<short_des_3>: string .
+<short_des_3_color>: string .
+<short_des_3_show>: bool .
+<short_des_4>: string .
+<short_des_4_color>: string .
+<short_des_4_show>: bool .
+<short_des_color>: string .
+<short_desc>: string @index(fulltext) .
+<short_description_1>: uid .
+<short_description_2>: uid .
+<short_description_3>: uid .
+<short_description_4>: uid .
+<short_descriptions>: uid .
+<show_detail>: bool .
+<sku_id>: string @index(hash, trigram) .
+<sort_order>: int .
+<source>: string .
+<square>: bool .
+<start_at>: int .
+<status_code>: string .
+<status_name>: string .
+<status_value>: int .
+<stock>: int .
+<stop_at>: int .
+<store>: string .
+<store_code>: string .
+<sub_orders>: [uid] @reverse .
+<sub_unit>: string .
+<sub_unit_quantity>: string .
+<target.Customer>: [uid] .
+<target.GroupCustomer>: [uid] .
+<target_type>: int .
+<target_value>: int .
+<tax_id>: string .
+<thumb>: string .
+<title>: string .
+<to_date>: int .
+<total_cost>: float .
+<total_pay>: float .
+<total_price>: float .
+<trailer>: string .
+<transaction_id>: string @index(exact) .
+<type_highlight>: bool .
+<type_import>: int .
+<type_name>: string .
+<type_value>: int .
+<unit>: string .
+<uom_quantity>: string .
+<updatedBy>: uid .
+<updated_at>: int .
+<updated_by>: string .
+<used_at>: int .
+<user_name>: string @index(exact, trigram) .
+<view_count>: int .
+<vn_all_province>: bool .
+<voucher.conditions>: [uid] .
+<voucher.customers>: [uid] @reverse .
+<voucher_code>: string @index(fulltext) .
+<voucher_label>: string .
+<voucher_schema>: uid .
+<voucher_type>: int .
+<voucher_uid>: string @index(term) .
+<voucher_usage.customer>: uid @reverse .
+<voucher_usage.order>: [uid] @reverse .
+<voucher_usage.voucher>: uid @reverse .
+<voucher_value>: int .
+<warranty_policy>: string .
+<width>: float .
+type <Address> {
+	address_des
+	address_type
+	district
+	province
+	display_order
+}
+type <AddressType> {
+	type_name
+	type_value
+}
+type <Brand> {
+	brand_name
+	id
+	brand_shop_id
+	is_deleted
+}
+type <CartItem> {
+	cart.product
+	quantity
+}
+type <Collection> {
+	is_deleted
+	collection_name
+	display_name
+	collection_image
+	background_image
+	collection_type
+	display_order
+	sort_order
+	layout_type
+	parent
+	reference_type
+	highlight.products
+	highlight.negative_products
+	highlight.collections
+	highlight_name
+	image_highlight
+	display_status
+	is_temporary
+	start_at
+	stop_at
+	voucher_code
+	list_voucher_code
+	voucher_schema
+	voucher_type
+	voucher_value
+	max_applied_value
+	voucher_label
+	voucher.customers
+	target_type
+	condition_type
+	condition_value
+	redeem
+	limit_redeem
+	color_title
+	color_price
+	color_discount
+	type_highlight
+	is_internal
+	collection.collection_item
+	collection_icon
+	gradient_start
+	gradient_end
+	updated_at
+	created_at
+	voucher.conditions
+	operator
+	auto_apply
+	brand_shop_id
+	config_type
+	collection.and_cond
+	collection.or_cond
+	collection.neg_prod_cond
+	is_parent
+}
+type <CollectionItem> {
+	item_product
+	item_collection
+	display_status
+}
+type <ContactInfo> {
+	customer_name
+	email
+	phone_number
+	address
+	is_default_address
+	created_at
+	updated_at
+}
+type <Customer> {
+	is_deleted
+	fptplay_id
+	gender
+	customer_name
+	email
+	phone_number
+	address
+	alt_info
+	haravan_id
+	cart_items
+	dateOfBirth
+	customer.favourite_products
+	profile_phone_number
+}
+type <GroupPayment> {
+	group_payment_name
+	display_status
+	payment_methods
+}
+type <Layout> {
+	layout_name
+	layout.layout_type
+	layout.layout_section
+	layout.group_customers
+	display_status
+	created_at
+	is_deleted
+	is_default
+	is_laucher_temp
+	display_order
+	target_type
+	layout.customers
+	layout.collections
+	layout.target_customer
+}
+type <LayoutSection> {
+	section_value
+	section_name
+	section_type
+	section_ref
+	display_order
+	section_limit
+	image
+}
+type <LogImport> {
+	date_import
+	updatedBy
+	display_status
+	type_import
+	path
+	pathErr
+	import_status
+	item_volume
+}
+type <Media> {
+	media_type
+	thumb
+	source
+	square
+	ratio
+	title
+	display_order
+}
+type <Order> {
+	transaction_id
+	order_id
+	partner_id
+	order.partner
+	order_items
+	order_status
+	pay_status
+	notes
+	had_sent_shipping
+	shipping_code
+	reason
+	date_delivery_success
+	had_sent_partner
+}
+type <OrderItem> {
+	order.product
+	product_name
+	cost_price
+	sell_price
+	discount
+	quantity
+	promotion_desc
+	brand_shop_id
+}
+type <Partner> {
+	partner.collection
+	id
+	partner_name
+	contract_number
+	email
+	tax_id
+	contact_person
+	phone_number
+	address_str
+	bank_name
+	bank_branch_name
+	account_name
+	account_number
+	contract_type
+	partner.pricing
+	return_terms
+	payment_terms
+	shipping_method
+	partner.warehouse
+	required_order_value
+	shipping_time
+}
+type <PaymentMethod> {
+	payment_name
+	payment_code
+	display_status
+}
+type <Pricing> {
+	cost_price_without_vat
+	cost_price_with_vat
+	listed_price_without_vat
+	listed_price_with_vat
+	price_without_vat
+	price_with_vat
+	front_margin
+	from_date
+	to_date
+	back_margin
+	back_margin_terms
+	discount
+	shipping_fee
+	created_at
+	updated_at
+	updated_by
+}
+type <PrimaryOrder> {
+	created_at
+	order_id
+	haravan_id
+	order.customer
+	customer_name
+	phone_number
+	address_des
+	address_type
+	province
+	district
+	order_status
+	pay_status
+	sub_orders
+	is_deleted
+	pay_gateway
+	voucher_code
+	voucher_value
+	applied_value
+	notes
+	client_notes
+	request_delivery_time
+	reason
+	created_address_type
+	created_address_des
+	created_customer_name
+	created_phone_number
+	created_province
+	created_district
+	date_delivery_success
+}
+type <Product> {
+	is_disabled_cod
+	is_disabled_quickpay
+	is_deleted
+	created_at
+	updated_at
+	product.collection
+	product.type
+	product.partner
+	product.brand
+	product.uom
+	product.manufacturer
+	previews
+	trailer
+	details
+	detail
+	product_name
+	cost_price
+	sell_price
+	discount
+	color
+	image_promotion
+	image_cover
+	image_banner
+	image_highlight
+	sku_id
+	haravan_id
+	haravan_variant_id
+	area
+	store
+	parent_sku_id
+	display_name
+	display_name_detail
+	display_bill_name
+	barcode
+	original
+	unit
+	sub_unit
+	sub_unit_quantity
+	packaging_unit
+	packaging_unit_quantity
+	short_desc
+	keywords
+	uom_quantity
+	long
+	width
+	height
+	promotion_desc
+	promotion_detail
+	return_terms
+	payment_terms
+	product.pricing
+	instock
+	show_detail
+	stock
+	display_status
+	display_order
+	view_count
+	ribbon
+	discount_tag
+	free_shipping_tag
+	areas
+	product.areas
+	fulltext_search
+	is_temporary
+	ghn_code
+	short_description_1
+	short_description_2
+	short_description_3
+	short_description_4
+	description
+	description_html
+	input_status
+	short_descriptions
+	product.group_payment
+	price_with_vat
+	warranty_policy
+	expiry_date
+	areas_allowed
+	shelf_life
+	partner_product_id
+	partner_sku
+}
+type <Reason> {
+	reason_name
+	reason_value
+	display_order
+}
+type <Region> {
+	id
+	name
+	name_url
+	geo
+	geo_region
+	display_order
+	areas
+	ghn_id
+	vn_all_province
+	location_support
+	is_province
+}
+type <Role> {
+	role_name
+	role.role_function
+}
+type <RoleFunction> {
+	function_name
+	function_alias
+	permission
+}
+type <Status> {
+	status_name
+	status_value
+	status_code
+}
+type <TargetCustomer> {
+	target_value
+	target.Customer
+	target.GroupCustomer
+	display_status
+}
+type <User> {
+	user_name
+	password
+	phone_number
+	email
+	role
+	is_deleted
+}
+type <VoucherUsage> {
+	customer_uid
+	voucher_uid
+	used_at
+	voucher_usage.order
+	voucher_usage.customer
+	voucher_usage.voucher
+	applied_items
+	rejected_items
+	applied_value
+	redeem
+	re_charged
+}
+type <dgraph.graphql> {
+	dgraph.graphql.schema
+	dgraph.graphql.xid
+}
